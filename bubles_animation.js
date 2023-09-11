@@ -2,11 +2,11 @@ var props = {
     scale: 1
 }
 if (window.screen.width <= 700) {
-    props.scale = 0.5
+    props.scale = 0.6
 }
 document.addEventListener('resize', () => {
     if (window.screen.width <= 700) {
-        props.scale = 0.5
+        props.scale = 0.6
     }
 })
 

@@ -88,4 +88,10 @@
     .buble {
         transform: scale(0.3);
     }
+    /* .left {} */
+    .right_clone {
+        bottom: -100vh;
+        position: fixed;
+        right: -100px
+    }
 }
