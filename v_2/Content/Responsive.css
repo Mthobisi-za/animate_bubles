@@ -1,0 +1,220 @@
+﻿/* medium and up screens */
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+    .carousel-item {
+        width: 100%;
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+    #carouselPackshot .carousel-item {
+        width: 50%;
+    }
+    .padding-lg {
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+    }
+    .padding-30 {
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+    .padding-md {
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+    }
+    .padding-sm {
+        padding: 20px;
+    }
+    .padding-lg-top {
+        padding-top: 50px;
+    }
+    .padding-lg-top-bottom {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .padding-0 {
+        padding: 0;
+    }
+    .margin-top-265px {
+        margin-top: 0 !important;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .mobile-img {
+        max-width: 400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    footer {
+        text-align: center;
+    }
+    footer img {
+        margin-bottom: 25px;
+    }
+    footer ul {
+        text-align: center;
+    }
+    footer ul li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+/* new styles */
+
+
+/* 
+@media (max-width:600px) {
+    .left_white_bubles {
+        animation: infinite;
+        animation-name: white_left_bubles;
+        animation-duration: 4s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes white_left_bubles {
+        from {
+            transform: translateY(20px);
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(0px);
+        }
+    }
+    .left_orange_bubles {
+        animation: infinite;
+        animation-name: orange_left_bubles;
+        animation-duration: 3s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes orange_left_bubles {
+        from {
+            transform: translateY(0px);
+            transform: translateX(20px);
+        }
+        to {
+            transform: translateY(10px);
+            transform: translateX(0px);
+        }
+    }
+    .left_pitch_bubles {
+        animation: infinite;
+        animation-name: pitch_left_bubles;
+        animation-duration: 3.5s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes pitch_left_bubles {
+        from {
+            transform: translateY(-30px);
+            transform: translateX(0px);
+            scale: 1.2;
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(10px);
+            scale: 1;
+        }
+    }
+    .right_white_bubles {
+        animation: infinite;
+        animation-name: white_right_bubles;
+        animation-duration: 4s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes white_right_bubles {
+        from {
+            transform: translateY(-20px);
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(0px);
+        }
+    }
+    .right_orange_bubles {
+        animation: infinite;
+        animation-name: orange_right_bubles;
+        animation-duration: 5s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes orange_right_bubles {
+        from {
+            transform: translateY(0px);
+            transform: translateX(-20px);
+        }
+        to {
+            transform: translateY(-10px);
+            transform: translateX(0px);
+        }
+    }
+    .right_pitch_bubles {
+        animation: infinite;
+        animation-name: pitch_right_bubles;
+        animation-duration: 3.5s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes pitch_right_bubles {
+        from {
+            transform: translateY(30px);
+            transform: translateX(0px);
+            scale: 1;
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(-10px);
+            scale: 1.2;
+        }
+    }
+} */

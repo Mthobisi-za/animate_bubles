@@ -79,3 +79,13 @@
     position: fixed;
     right: 0
 }
+
+@media (max-width:800px) {
+    .left,
+    .right {
+        display: none!important;
+    }
+    .buble {
+        transform: scale(0.3);
+    }
+}

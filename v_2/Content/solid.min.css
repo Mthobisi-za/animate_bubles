@@ -1,0 +1,130 @@
+/*!
+ * Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */
+:host,:root{--fa-style-family-classic:"Font Awesome 6 Free";--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url(../webfonts/fa-solid-900.woff2) format("woff2"),url(../webfonts/fa-solid-900.ttf) format("truetype")}.fa-solid,.fas{font-weight:900}
+
+
+
+@media (max-width:600px) {
+    .left_white_bubles {
+        animation: infinite;
+        animation-name: white_left_bubles;
+        animation-duration: 4s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes white_left_bubles {
+        from {
+            transform: translateY(20px);
+            /* transform: translateX(5px); */
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(0px);
+        }
+    }
+    .left_orange_bubles {
+        animation: infinite;
+        animation-name: orange_left_bubles;
+        animation-duration: 3s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes orange_left_bubles {
+        from {
+            transform: translateY(0px);
+            transform: translateX(20px);
+        }
+        to {
+            transform: translateY(10px);
+            transform: translateX(0px);
+        }
+    }
+    .left_pitch_bubles {
+        animation: infinite;
+        animation-name: pitch_left_bubles;
+        animation-duration: 3.5s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes pitch_left_bubles {
+        from {
+            transform: translateY(-30px);
+            transform: translateX(0px);
+            scale: 1.2;
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(10px);
+            scale: 1;
+        }
+    }
+    /* other side */
+    .right_white_bubles {
+        animation: infinite;
+        animation-name: white_right_bubles;
+        animation-duration: 4s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes white_right_bubles {
+        from {
+            transform: translateY(-20px);
+            /* transform: translateX(5px); */
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(0px);
+        }
+    }
+    .right_orange_bubles {
+        animation: infinite;
+        animation-name: orange_right_bubles;
+        animation-duration: 5s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes orange_right_bubles {
+        from {
+            transform: translateY(0px);
+            transform: translateX(-20px);
+        }
+        to {
+            transform: translateY(-10px);
+            transform: translateX(0px);
+        }
+    }
+    .right_pitch_bubles {
+        animation: infinite;
+        animation-name: pitch_right_bubles;
+        animation-duration: 3.5s;
+        animation-delay: calc(var(--animation-order) * 100ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    @keyframes pitch_right_bubles {
+        from {
+            transform: translateY(30px);
+            transform: translateX(0px);
+            scale: 1;
+        }
+        to {
+            transform: translateY(0px);
+            transform: translateX(-10px);
+            scale: 1.2;
+        }
+    }
+}
