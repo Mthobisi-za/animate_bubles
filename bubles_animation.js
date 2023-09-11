@@ -1,5 +1,6 @@
 var props = {
-    scale: 1
+    scale: 1,
+    delay: 0
 }
 if (window.screen.width <= 700) {
     props.scale = 0.6
@@ -67,59 +68,115 @@ async function animate_top() {
         });
 
     }
+    if (window.screen.width < 700) {
+        gsap.to('.left_white_bubles_clone', {
+            duration: 10,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: props.delay,
+            onUpdate: () => {
+                tracker('left_white_bubles_clone');
+            }
+        });
+        gsap.to('.left_orange_bubles_clone', {
+            duration: 17,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: props.delay,
+        });
+        gsap.to('.left_pitch_bubles_clone', {
+            duration: 12,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: props.delay,
+        });
+
+        gsap.to('.right_white_bubles_clone', {
+            duration: 10,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: props.delay,
+        });
+        gsap.to('.right_orange_bubles_clone', {
+            duration: 17,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: props.delay,
+        });
+        gsap.to('.right_pitch_bubles_clone', {
+            duration: 12,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: props.delay,
+        });
+    } else {
+        gsap.to('.left_white_bubles_clone', {
+            duration: 10,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: 6,
+            onUpdate: () => {
+                tracker('left_white_bubles_clone');
+            }
+        });
+        gsap.to('.left_orange_bubles_clone', {
+            duration: 17,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: 4,
+        });
+        gsap.to('.left_pitch_bubles_clone', {
+            duration: 12,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: 6,
+        });
+
+        gsap.to('.right_white_bubles_clone', {
+            duration: 10,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: 5,
+        });
+        gsap.to('.right_orange_bubles_clone', {
+            duration: 17,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: 9,
+        });
+        gsap.to('.right_pitch_bubles_clone', {
+            duration: 12,
+            y: -200 + 'vh',
+            stagger: .2,
+            repeat: -1,
+            scale: props.scale,
+            delay: 5,
+        });
+    }
 
     // clones
-    gsap.to('.left_white_bubles_clone', {
-        duration: 10,
-        y: -200 + 'vh',
-        stagger: .2,
-        repeat: -1,
-        scale: props.scale,
-        delay: 6,
-        onUpdate: () => {
-            tracker('left_white_bubles_clone');
-        }
-    });
-    gsap.to('.left_orange_bubles_clone', {
-        duration: 17,
-        y: -200 + 'vh',
-        stagger: .2,
-        repeat: -1,
-        scale: props.scale,
-        delay: 4,
-    });
-    gsap.to('.left_pitch_bubles_clone', {
-        duration: 12,
-        y: -200 + 'vh',
-        stagger: .2,
-        repeat: -1,
-        scale: props.scale,
-        delay: 6,
-    });
 
-    gsap.to('.right_white_bubles_clone', {
-        duration: 10,
-        y: -200 + 'vh',
-        stagger: .2,
-        repeat: -1,
-        scale: props.scale,
-        delay: 5,
-    });
-    gsap.to('.right_orange_bubles_clone', {
-        duration: 17,
-        y: -200 + 'vh',
-        stagger: .2,
-        repeat: -1,
-        scale: props.scale,
-        delay: 9,
-    });
-    gsap.to('.right_pitch_bubles_clone', {
-        duration: 12,
-        y: -200 + 'vh',
-        stagger: .2,
-        repeat: -1,
-        scale: props.scale,
-        delay: 5,
-    });
 }
 animate_top();
