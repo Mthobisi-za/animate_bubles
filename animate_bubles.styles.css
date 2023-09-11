@@ -1,0 +1,81 @@
+/* .buble {
+    position: absolute;
+    bottom: 0;
+    /* opacity: 0.5; */
+
+
+/* animation: Animate_float 10s infinite ease-in; */
+
+
+/* margin-top: 100vh; */
+
+
+/* } */
+
+
+/* .left_white_bubles {
+    animation-duration: 8s;
+}
+
+.left_orange_bubles {
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.left_pitch_bubles {
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.right_white_bubles {
+    animation-duration: 8s;
+}
+
+.right_orange_bubles {
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.right_pitch_bubles {
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+@keyframes Animate_float {
+    0% {
+        bottom: -100px;
+        transform: translateY(50vh);
+    }
+    50% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        bottom: 1080px;
+        transform: translateY(-110vh);
+    }
+}
+
+*/
+
+.buble {
+    transform: scale(0.8);
+}
+
+.wrapper {
+    /* position: absolute;
+    height: 100vh; */
+    /* overflow: hidden; */
+}
+
+.left,
+.left_clone {
+    bottom: -100vh;
+    position: fixed;
+}
+
+.right,
+.right_clone {
+    bottom: -100vh;
+    position: fixed;
+    right: 0
+}

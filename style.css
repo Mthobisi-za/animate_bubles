@@ -1,7 +1,7 @@
 .wrapper {
     /* background-color: saddlebrown; */
     width: 100%;
-    min-height: 20vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
     /* justify-content: center;
@@ -13,8 +13,16 @@
     width: 100%;
 }
 
-.left {}
+.abs_left_new,
+.abs_right_new {
+    position: absolute;
+}
 
 .right {
     text-align: right;
+    right: 0;
+}
+
+svg {
+    overflow: visible;
 }
